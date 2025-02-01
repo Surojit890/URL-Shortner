@@ -12,6 +12,7 @@ ID Generation: shortid package
 🔧 How It Works
 POST /url – Create a short URL
 GET /:shortID – Redirect to the original URL and log the visit
+
 📌 Setup
 bash
 Copy
@@ -20,6 +21,7 @@ git clone https://github.com/your-repo/url-shortener.git
 cd url-shortener
 npm install
 node server.js
+
 📖 Usage
 Send a POST request with { "url": "https://example.com" } to /url, and get a short ID.
 Access http://localhost:8000/:shortID to redirect and track visits.
