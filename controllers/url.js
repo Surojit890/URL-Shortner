@@ -14,6 +14,13 @@ async function HandleUrl(req, res) {
     return res.json({id : shortID});
 }
 
+async function HandleAnalytics(req, res) {
+    const shortID = req.params.shortID;
+    const Result = await URL.findOne({shortID})
+    return res.json({totalClick: Result.visitedHistory.length,
+        analytics : Result.visitedHistory})
+}
+
 module.exports = {
-    HandleUrl
+    HandleUrl,HandleAnalytics 
 }
