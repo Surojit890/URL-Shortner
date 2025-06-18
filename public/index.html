@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Short URL Generator</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🔗 URL Shortener</h1>
+    <input id="longUrl" type="text" placeholder="Enter a long URL..." />
+    <button onclick="shortenUrl()">Shorten</button>
+    <div id="resultBox" class="hidden">
+      <p>Here’s your short URL:</p>
+      <a id="shortUrl" href="#" target="_blank"></a>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

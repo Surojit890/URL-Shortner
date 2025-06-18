@@ -3,15 +3,25 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon server.js"
+    "dev": "nodemon server.js",
+    "start": "node server.js"
   },
   "author": "",
   "license": "ISC",
-  "description": "",
+  "description": "This is a simple **URL Shortener** built using **Node.js, Express, and MongoDB**. It allows users to generate short URLs and track visit history.",
   "dependencies": {
     "express": "^4.21.2",
     "mongoose": "^8.9.2",
     "nodemon": "^3.1.9",
     "shortid": "^2.2.16"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Surojit890/URL-Shortner.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/Surojit890/URL-Shortner/issues"
+  },
+  "homepage": "https://github.com/Surojit890/URL-Shortner#readme"
 }
