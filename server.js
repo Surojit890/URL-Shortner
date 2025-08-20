@@ -10,7 +10,6 @@ const PORT = 8000;
 // Middleware
 app.use(express.json());
 
-// Serve static frontend files from 'public' directory
 app.use(express.static(path.join(__dirname, "public")));
 
 // Connect to MongoDB
